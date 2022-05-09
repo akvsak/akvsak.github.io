@@ -1,20 +1,6 @@
 ---
-title: AK's Homepage
+title: Blog Development Page
 --- 
-
-### Links
-
-### Blog Posts 
-
-{%- for post in site.posts -%}
-{% unless post.categories contains "now" %}
-
-[{{ post.title }}]({{ post.url }}) {{ post.date | date: "%Y-%m-%d" }}
-
-{% endunless %}
-{% endfor %}
-
-### Other links
 
 [random post page](/random) || [dynamic now page](/now) || [demo tag page](/tags)
 
@@ -28,4 +14,18 @@ Make sure you have the dark mode toggle on each page, otherwise you'll always di
 
 [Build random post link using client side JS](https://derekkedziora.com/blog/Getting-Random-Post-in-Jekyll) 
 
-[making a tag page](https://derekkedziora.com/blog/tag-page-jekyll).
+### Tags
+
+[making a tag page](https://derekkedziora.com/blog/tag-page-jekyll)
+
+<div markdown=1 style="min-height: 100vh;">
+
+You can style the tag menu and each tag section with `min-height: 100vh;`
+
+Then add a back to top link at the bottom of each section. This looks less cluttered when you have lot of tags and posts.
+
+Check out my full guide to [making a tag page in Jekyll](https://derekkedziora.com/blog/tag-page-jekyll).
+
+
+### Now Page
+  
