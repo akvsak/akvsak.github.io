@@ -1,3 +1,7 @@
+# Ashok Kumar's Homepage: 
+## Experiments and notes in coding.
+
+======================================================
 For other people using Jekyll this is a demo of how to: 
 
 1. Add a dark mode toggle 
