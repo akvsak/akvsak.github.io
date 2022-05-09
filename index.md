@@ -1,22 +1,25 @@
 ---
-title: Ashok Kumar's Homepage Dark and Random Jekyll Demo
+title: Ashok Kumar's Homepage
 --- 
 
-## Links
+### Links
 
-## Blog Posts 
+### Blog Posts 
 
 {% for post in site.posts %}
 {% unless post.categories contains "now" %}
 
-[{{ post.title }}]({{ post.url }})
+[{{ post.title }}]({{ post.url }}){{ post.date }}
 
 {% endunless %}
 {% endfor %}
 
-## Blog Design
 
-[random post page](/random) | [dynamic now page](/now) | [demo tag page](/tags).
+### Other links
+
+[random post page](/random) || [dynamic now page](/now) || [demo tag page](/tags)
+
+### Blog Design Links
 
 [original source code on GitHub](https://github.com/derekkedziora/jekyll-demo) 
 
@@ -24,6 +27,6 @@ title: Ashok Kumar's Homepage Dark and Random Jekyll Demo
 
 Make sure you have the dark mode toggle on each page, otherwise you'll always display the system color preference.
 
-[build random post link using client side JavaScript](https://derekkedziora.com/blog/Getting-Random-Post-in-Jekyll) 
+[Build random post link using client side JS](https://derekkedziora.com/blog/Getting-Random-Post-in-Jekyll) 
 
 [making a tag page](https://derekkedziora.com/blog/tag-page-jekyll).
