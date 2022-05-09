@@ -1,19 +1,18 @@
 ---
-title: Ashok Kumar's Homepage
+title: AK's Homepage
 --- 
 
 ### Links
 
 ### Blog Posts 
 
-{% for post in site.posts %}
+{%- for post in site.posts -%}
 {% unless post.categories contains "now" %}
 
 [{{ post.title }}]({{ post.url }}) {{ post.date | date: "%Y-%m-%d" }}
 
 {% endunless %}
 {% endfor %}
-
 
 ### Other links
 
