@@ -9,7 +9,7 @@ title: Ashok Kumar's Homepage
 {% for post in site.posts %}
 {% unless post.categories contains "now" %}
 
-[{{ post.title }}]({{ post.url }}){{ post.date }}
+[{{ post.title }}]({{ post.url }}) {{ post.date | date: "%m-%d-%Y"  }}
 
 {% endunless %}
 {% endfor %}
