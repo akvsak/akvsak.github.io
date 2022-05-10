@@ -1,9 +1,11 @@
-title: "Ashok Kumar's Homepage" 
+title: "AK's Homepage" 
 author: Ashok Kumar
 # email: "derekkedziora@icloud.com"
-description: "A Jekyll demo site with a dark mode switch and random post feature"
+description: "A website for learning and sharing knowledge"
 github: akvsak
 markdown: kramdown
+kramdown:
+  math_engine: katex
 parse_block_html: false
 url: https://akvsak.github.io/
 defaults:
