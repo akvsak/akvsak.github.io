@@ -1,11 +1,14 @@
 ---
-title: "knowledge notes"
-category: general
+title: "Latex testing"
+category: tech
 tags: 
  - general
- - notes
+ - latex
 mathjax: true
 --- 
+
+
+
 
 This 100em is 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1" width="100em" height=auto /> <br/>
@@ -53,19 +56,38 @@ and
 
 $$\sum_{x_i > x_k} w_i \le \frac{1}{2}.$$
 
-Logistic regression functions
+### Logistic regression functions
 
 I use the naming conventions of the Ng course. The logistic regression model is such that we want the hypothesis to be within the bounds 0 and 1.
-\[0 \leq h_{\theta}(x) \leq 1\]
 
-If \(h_{\theta}(x) = g(\theta^Tx)\) and \(g(z) = \frac{1}{1 + exp(-z)}\\) then
-\[h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)}\]
+$$ 0 \leq h_{\theta}(x) \leq 1 $$
 
-The objective will be to determine the parameters \(\theta\).
+If $$ h_{\theta}(x) = g(\theta^Tx) $$ and $$ g(z) = \frac{1}{1 + exp(-z)}\ $$ then
+
+$$ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $$
+
+The objective will be to determine the parameters $$ \theta $$.
 
 To do this, we will minimize the logistic regression cost function
-\[J(\theta) = \frac{1}{m} \sum_{i=1}^{m}[-y^{(i)}\log(h_{\theta}(x^{(i)}))-(1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))]\]
 
-The gradient equation is \(\frac{\partial J(\theta)}{\partial \theta_{j}} = \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x^{(i)}))-y^{(i)})x^{(i)}_{j}\)
+$$ J(\theta) = \frac{1}{m} \sum_{i=1}^{m}[-y^{(i)}\log(h_{\theta}(x^{(i)}))-(1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] $$
+
+The gradient equation is $$ \frac{\partial J(\theta)}{\partial \theta_{j}} = \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x^{(i)}))-y^{(i)})x^{(i)}_{j} $$
+
+### Determine the decision boundary linear equation.
+
+From the lectures: $$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5 $$ when $$ \theta^Tx \geq 0 $$.
+
+In the case of two features:
+
+$$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2}) $$
+
+Therefore: $$ \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0 $$
+
+We can re-arrange to solve for the linear equation: $$ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $$
+
+### The logistic regression cost function with L2 regularization as taught in the ML course is
+
+$$ J(\theta) = \frac{1}{m} \sum_{i=1}^{m}[-y^{(i)}\log(h_{\theta}(x^{(i)}))-(1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))] + \frac{\lambda}{2m}\sum_{j=1}^{n}\theta^2_{j} $$
 
 [Home](/) or [random post](/random)
