@@ -2,7 +2,7 @@
 title: Tag Page
 permalink: /tags
 ---
-Back to the [main page](/).
+<div markdown=1 style="min-height: 100vh;">
 
 {% for tag in site.tags %}
 
