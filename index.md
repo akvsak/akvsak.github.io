@@ -16,4 +16,4 @@ title: AK's Homepage
 
 ### Other links
 
-[random post page](/random) || [dynamic now page](/now) || [demo tag page](/tags) || [blog design](/dev)
+[random post page](/random) || [dynamic now page](/now) || [tag page](/tags) || [category page](/categories) [blog design](/dev)
