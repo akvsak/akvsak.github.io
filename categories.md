@@ -2,7 +2,7 @@
 title: Category Page
 permalink: /categories
 ---
-Back to the [main page](/).
+<div markdown=1 style="min-height: 100vh;">
 
 {% for category in site.categories %}
 
