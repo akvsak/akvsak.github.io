@@ -1,14 +1,11 @@
 ---
 title: "Latex testing"
-category: tech
+category: posts
 tags: 
  - general
  - latex
 mathjax: true
 --- 
-
-
-
 
 This 100em is 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1" width="100em" height=auto /> <br/>

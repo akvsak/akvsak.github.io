@@ -1,8 +1,10 @@
-title: "Mathematica Notes" category: tech tags:
-
--   tech
-
--   mathematica
+---
+title: Mathematica Notes 
+category: notes 
+tags:
+ - tech
+ - mathematica
+---
 
 Wolfram Engine:
 <https://account.wolfram.com/download/public/wolfram-engine/desktop/WIN>
