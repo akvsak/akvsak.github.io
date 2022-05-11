@@ -1,10 +1,7 @@
 ---
 title: AK's Homepage
 --- 
-
-### Links
-
-### Blog Posts 
+### Notes & Posts
 
 {% for post in site.posts %}
 {% unless post.categories contains "now" %}
