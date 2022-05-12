@@ -1,9 +1,10 @@
 ---
 title: Now Page
-description: "This is what I would be doing now if this were a real site"
+description: "Posts that are not notes."
 nowPage: true
 permalink: /now
 ---
+### {{ site.categories.now[0].title }}
 
 {{ site.categories.now[0].content }}
 
