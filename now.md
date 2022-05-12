@@ -7,7 +7,7 @@ permalink: /now
 
 {{ site.categories.now[0].content }}
 
-## Previous Now Pages
+### Previous Now Pages
 
 {% for post in site.categories.now offset: 1 %}
 
